@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!-- my CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Ceritain Aja</title>
+    </head>
+
+    <body id="home" class="scrollspy">
+        <!-- navbar -->
+        <div class="navbar-fixed">
+            <nav class="blue lighten-2">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="index.html" class="brand-logo">Ceritain Aja</a>
+                        <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="clients.html">Clients</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="internship.html">Career</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- sidenav for mobile apps -->
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="internship.html">Career</a></li>
+        </ul>
+
+        <!-- contact us -->
+        <section id="contact" class="contact scrollspy">
+            <div class="container">
+                <h3 class="light center grey-text text-darken-3">Contact Us</h3>
+                <div class="row">
+                    <div class="col m5 s12">
+                        <div class="card-panel blue lighten-2 center white-text">
+                            <h5>Contact Us</h5>
+                            <h5>Working Hours: 08.00-17.00</h5>
+                            <p>Outside working hours, please contact us by e-mail. We'll reply your email soon!</p>
+                        </div>
+                        <ul class="collection with-header">
+                            <li class="collection-item"><h4>Our Office</h4></li>
+                            <li class="collection-item">Poncowinatan Street Number 15, Yogyakarta, Jetis, Gowongan</li>
+                            <li class="collection-item">West Java, Indonesia</li>
+                        </ul>
+                    </div>
+
+                    <div class="col m7 s12">
+                        <form>
+                            <div class="card-panel">
+                                <h5>Please Fill Out This Form</h5>
+                                <div class="input-field">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input type="text" name="name" id="name" class="validate" required>
+                                    <label for="name">Name</label>
+                                </div>
+
+                                <div class="input-field">
+                                    <i class="material-icons prefix">email</i>
+                                    <input type="email" name="email" id="email" class="validate" required>
+                                    <label for="name">Email</label>
+                                </div>
+
+                                <div class="input-field">
+                                    <i class="material-icons prefix">phone</i>
+                                    <input type="text" name="phone_number" id="phone_number" class="validate" required>
+                                    <label for="name">Phone Number</label>
+                                </div>
+
+                                <div class="input-field">
+                                    <i class="material-icons prefix">message</i>
+                                    <textarea type="text" name="message" id="message" class="materialize-textarea" class="validate" required></textarea>
+                                    <label for="textarea">Message</label>
+                                </div>
+
+                                <!-- <input type="submit" value="Send" id="submit" onclick="submit()"> -->
+                                <div class="form-field">
+                                    <button type="submit" class="btn blue lighten-2" id="submit">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <hr>
+        </div>
+
+        <!-- maps -->
+        <section>
+            <div class="container"> 
+                <h3 class="light center grey-text text-darken-3">Location</h3>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.070912702849!2d110.3625891147258!3d-7.782306294391526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a583a43f9125d%3A0xd20e719c31f8aa6d!2sJl.%20Poncowinatan%20No.15%2C%20Gowongan%2C%20Kec.%20Jetis%2C%20Kota%20Yogyakarta%2C%20Daerah%20Istimewa%20Yogyakarta%2055233!5e0!3m2!1sen!2sid!4v1619612576143!5m2!1sen!2sid" 
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="page-footer blue lighten-3 white-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col m5 s12">
+                        <img src="img/logo_1.png"><br><br>
+                        <a href="https://play.google.com/store">
+                            <img src="img/google_play.png" height="48px" width="162px">
+                        </a>
+                    </div>
+                    <div class="col m4 s12">
+                        <h4 class="black-text">About Us</h4>
+                        <ul>
+                            <li><a class="black-text text-lighten-3" href="aboutus.html">About Us</a></li>
+                            <li><a class="black-text text-lighten-3" href="clients.html">Clients</a></li>
+                            <li><a class="black-text text-lighten-3" href="services.html">Services</a></li>
+                            <li><a class="black-text text-lighten-3" href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col m3 s12">
+                        <h4 class="black-text">Other Services</h4>
+                        <ul>
+                            <li><a class="black-text text-lighten-3" href="internship.html">Career</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright blue lighten-2 white-text">
+                <div class="container">
+                    <p class="flow-text center">© KBTI - SI UKDW 2021</p>
+                </div>
+            </div>
+        </footer>
+
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+
+        <!-- google maps -->
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4Q5HCF6r8FQ5VXD-mj3OQtwd0JSpOxUo&callback=initMap&libraries=&v=weekly" async></script></script> -->
+
+        <script>
+            // sidebar
+            const sideNav = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sideNav);
+
+            function submit(e) {
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var phone_number = document.getElementById('phone_number').value;
+                var message = document.getElementById('message').value;
+                console.log(name, email, phone_number, message);
+                if(name != '' && email != '' && phone_number != '' && message != '') {
+                    alert("Thank you for your message!");
+                }
+            }
+
+            document.getElementById("submit").addEventListener("click", submit);
+
+            // gmaps
+            // let map;
+            // function initMap() {
+            //     const map = new google.maps.Map(document.getElementById("map"), {
+            //         zoom: 18,
+            //         center: { lat: -7.7860493, lng: 110.3783757 }
+            //     });
+
+            //     const marker = new google.maps.Marker({
+            //         position: { lat: -7.7860493, lng: 110.3783757 },
+            //         map: map,
+            //     });
+            // }
+        </script>
+    </body>
+</html>

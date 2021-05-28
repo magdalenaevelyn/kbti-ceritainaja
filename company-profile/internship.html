@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!-- my CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Ceritain Aja</title>
+    </head>
+
+    <body id="home" class="scrollspy">
+        <!-- navbar -->
+        <div class="navbar-fixed">
+            <nav class="blue lighten-2">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="index.html" class="brand-logo">Ceritain Aja</a>
+                        <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="clients.html">Clients</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="internship.html">Career</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- sidenav for mobile apps -->
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="internship.html">Career</a></li>
+        </ul>
+
+        <!-- services -->
+        <section id="services" class="services grey lighten-3 scrollspy">
+            <div class="container">
+                <div class="row">
+                    <h3 class="center light grey-text text-darken-3">Career</h3>
+                    <h5>On this occasion, Ceritain Aja opens opportunities for certified internships for those of 
+                        you who are interested in experiencing work at a startup. This internship program will last 3 (three) months.</h5>
+                    <div class="col m4 s12">
+                        <div class="card-panel center">
+                            <i class="material-icons medium">psychology</i>
+                            <h5>Junior Counselor</h5>
+                            <p> In realizing mental health in Indonesian, we open the opportunity for those of you 
+                                who meet the qualifications to become a Junior Counselors! Especially for those of you who like to listen to stories, 
+                                let's register yourself immediately
+                            </p>
+                            <button type="submit" class="btn blue lighten-2" style="width: 280px" id="submit" onclick="location.href='detail_intern.html';">More Details</button>
+                        </div>
+                    </div>
+                    <div class="col m4 s12">
+                        <div class="card-panel center">
+                            <i class="material-icons medium">hourglass_empty</i>
+                            <h5>Coming Soon!</h5>
+                        </div>
+                    </div>
+                    <div class="col m4 s12">
+                        <div class="card-panel center">
+                            <i class="material-icons medium">hourglass_empty</i>
+                            <h5>Coming Soon!</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="page-footer blue lighten-3 white-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col m5 s12">
+                        <img src="img/logo_1.png"><br><br>
+                        <a href="https://play.google.com/store">
+                            <img src="img/google_play.png" height="48px" width="162px">
+                        </a>
+                    </div>
+                    <div class="col m4 s12">
+                        <h4 class="black-text">About Us</h4>
+                        <ul>
+                            <li><a class="black-text text-lighten-3" href="aboutus.html">About Us</a></li>
+                            <li><a class="black-text text-lighten-3" href="clients.html">Clients</a></li>
+                            <li><a class="black-text text-lighten-3" href="services.html">Services</a></li>
+                            <li><a class="black-text text-lighten-3" href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col m3 s12">
+                        <h4 class="black-text">Other Services</h4>
+                        <ul>
+                            <li><a class="black-text text-lighten-3" href="internship.html">Career</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright blue lighten-2 white-text">
+                <div class="container">
+                    <p class="flow-text center">© KBTI - SI UKDW 2021</p>
+                </div>
+            </div>
+        </footer>
+
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script>
+            // sidebar
+            const sideNav = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sideNav);
+
+            // materialboxed
+            const materialboxed = document.querySelectorAll('.materialboxed');
+            M.Materialbox.init(materialboxed);
+
+            // scrollspy
+            const scrollspy = document.querySelectorAll('.scrollspy');
+            M.ScrollSpy.init(scrollspy, {
+                scrollOffset: 50
+            });
+        </script>
+    </body>
+</html>

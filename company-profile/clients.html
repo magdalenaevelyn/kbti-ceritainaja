@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!-- my CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>Ceritain Aja</title>
+    </head>
+
+    <body id="home" class="scrollspy">
+        <!-- navbar -->
+        <div class="navbar-fixed">
+            <nav class="blue lighten-2">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="index.html" class="brand-logo">Ceritain Aja</a>
+                        <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="clients.html">Clients</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="internship.html">Career</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- sidenav for mobile apps -->
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="internship.html">Career</a></li>
+        </ul>
+
+        <!-- clients -->
+        <div id="clients" class="scrollspy">
+            <div class="container clients">
+                <h3 class="center grey-text text-darken-3">Who can join Ceritain Aja?</h3>
+                <br> <br>
+                <div class="row">
+                    <div class="col m4 s12 center">
+                        <img src="img/clients/smp.png" height="250px">
+                        <h5>Highschool students</h5>
+                    </div>
+                    <div class="col m4 s12 center">
+                        <img src="img/clients/mahasiswa.png" height="250px">
+                        <h5>Undegraduate students</h5>
+                    </div>
+                    <div class="col m4 s12 center">
+                        <img src="img/clients/karyawan.png" height="250px" width="390px">
+                        <h5>Employee</h5>
+                    </div>
+                </div>
+                <h5>Open up for high school or undergraduate students and employees who have a mental disorder but you're shy to 
+                    tell your mental disorder. Just click the download button in Google Play Store and we will welcome you with the best counselor
+                </h5> <br>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="page-footer blue lighten-3 white-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col m5 s12">
+                        <img src="img/logo_1.png"><br><br>
+                        <a href="https://play.google.com/store">
+                            <img src="img/google_play.png" height="48px" width="162px">
+                        </a>
+                    </div>
+                    <div class="col m4 s12">
+                        <h4 class="black-text">About Us</h4>
+                        <ul>
+                            <li><a class="black-text text-lighten-3" href="aboutus.html">About Us</a></li>
+                            <li><a class="black-text text-lighten-3" href="clients.html">Clients</a></li>
+                            <li><a class="black-text text-lighten-3" href="services.html">Services</a></li>
+                            <li><a class="black-text text-lighten-3" href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col m3 s12">
+                        <h4 class="black-text">Other Services</h4>
+                        <ul>
+                            <li><a class="black-text text-lighten-3" href="internship.html">Career</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright blue lighten-2 white-text">
+                <div class="container">
+                    <p class="flow-text center">© KBTI - SI UKDW 2021</p>
+                </div>
+            </div>
+        </footer>
+
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script>
+            // sidebar
+            const sideNav = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sideNav);
+
+            // materialboxed
+            const materialboxed = document.querySelectorAll('.materialboxed');
+            M.Materialbox.init(materialboxed);
+
+            // scrollspy
+            const scrollspy = document.querySelectorAll('.scrollspy');
+            M.ScrollSpy.init(scrollspy, {
+                scrollOffset: 50
+            });
+        </script>
+    </body>
+</html>
